@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vibetech | Technology That Moves With You</title>
+<meta name="description" content="Vibetech - phones, accessories, repairs and digital technology services.">
+<style>
+:root{
+  --bg:#070b14;--panel:#0d1422;--text:#f4f7fb;--muted:#9ba8bb;
+  --line:rgba(255,255,255,.1);--accent:#35c8ff;--accent2:#7c5cff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 80% 10%,rgba(53,200,255,.12),transparent 28%),radial-gradient(circle at 10% 30%,rgba(124,92,255,.1),transparent 25%),var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,11,20,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.25rem;font-weight:800;letter-spacing:-.5px}
+.logo span{color:var(--accent)}
+.links{display:flex;gap:25px;color:#cbd4e1;font-size:.94rem}
+.links a:hover{color:var(--accent)}
+.hero{padding:105px 0 90px;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.badge{display:inline-block;padding:7px 13px;border:1px solid rgba(53,200,255,.3);border-radius:999px;color:var(--accent);background:rgba(53,200,255,.07);font-size:.82rem;margin-bottom:18px}
+h1{font-size:clamp(2.8rem,6vw,5.3rem);line-height:.98;letter-spacing:-3px;max-width:700px}
+.gradient{background:linear-gradient(100deg,#fff 25%,var(--accent),#9a82ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:1.08rem;max-width:600px;margin:25px 0 30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 19px;border-radius:10px;font-weight:700;border:1px solid var(--line);display:inline-block}
+.primary{background:linear-gradient(100deg,var(--accent),var(--accent2));color:#03101a;border:0}
+.secondary{background:rgba(255,255,255,.04)}
+.tech-card{min-height:380px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.02));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 25px 80px rgba(0,0,0,.35)}
+.orbit{width:245px;height:245px;border:1px solid rgba(53,200,255,.35);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 70px rgba(53,200,255,.12)}
+.device{width:125px;height:210px;border:4px solid #d9e7f4;border-radius:22px;background:linear-gradient(150deg,#111c2c,#05070d);box-shadow:0 0 35px rgba(53,200,255,.35);position:relative}
+.device:after{content:"";position:absolute;inset:15px;border-radius:12px;background:linear-gradient(140deg,#142b4a,#10203c 45%,#151027)}
+section{padding:80px 0}
+.section-head{margin-bottom:32px}
+.kicker{color:var(--accent);font-size:.8rem;text-transform:uppercase;letter-spacing:2px;font-weight:800}
+h2{font-size:2.25rem;letter-spacing:-1px;margin-top:5px}
+.section-head p{color:var(--muted);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product-image{width:100%;height:210px;object-fit:cover;border-radius:14px;margin-bottom:16px;border:1px solid var(--line)}
+.card{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:17px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(53,200,255,.35)}
+.icon{font-size:1.8rem;margin-bottom:12px}
+.card h3{margin-bottom:7px}
+.card p{color:var(--muted);font-size:.94rem}
+.price{color:var(--accent);font-weight:800;margin-top:15px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{padding:30px;border-radius:20px;border:1px solid var(--line);background:rgba(255,255,255,.035)}
+.contact-item{padding:14px 0;border-bottom:1px solid var(--line);color:#d8e0eb}
+.contact-item:last-child{border:0}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.9rem}
+@media(max-width:800px){.product-gallery{grid-template-columns:1fr 1fr}.product-gallery img{height:150px}.links{display:none}.hero,.contact{grid-template-columns:1fr}.hero{padding-top:75px}.grid{grid-template-columns:1fr}.tech-card{min-height:300px}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="logo" href="#">Vibe<span>tech</span></a>
+    <div class="links">
+      <a href="#products">Phones</a><a href="#audio">Audio</a><a href="#laptops">Laptops</a><a href="#accessories">Accessories</a><a href="#gaming">Gaming</a><a href="#order">Order</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="badge">NEXT-GEN TECHNOLOGY • KENYA</div>
+    <h1>Technology that <span class="gradient">moves with you.</span></h1>
+    <p>Premium phones, accessories, repairs and digital services, delivered with a professional experience built for the modern world.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#products">Explore Products</a>
+      <a class="btn secondary" href="#contact">Talk to Us</a>
+    </div>
+  </div>
+  <div class="tech-card"><div class="orbit"><div class="device"></div></div></div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Store</div><h2>Featured tech</h2><p>Quality technology and everyday essentials.</p></div>
+    
+
+
+<div class="pricing-note">
+  <strong>💰 Pricing note:</strong> Displayed prices are indicative selling prices with a 10% markup
+  applied to a current Kenya market reference where one was available. They are <strong>not guaranteed live
+  supplier prices</strong>. Confirm your actual purchase/wholesale cost, storage/RAM configuration,
+  condition and stock before publishing or accepting an order.
+</div>
+<div class="grid phone-grid">
+  <article class="card phone-card">
+    <div class="product-gallery">
+      <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85" alt="Samsung Galaxy A16 screen/front view">
+      <img class="camera-view" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85" alt="Samsung Galaxy A16 camera/back view">
+    </div>
+    <div class="icon">📱</div><h3>Samsung Galaxy A16</h3>
+    <p>6.7" AMOLED • 50MP camera • 5,000mAh battery</p><div class="price">KSh 20,900</div>
+    <button class="btn primary" onclick="choosePhone('Samsung Galaxy A16')">Order</button>
+  </article>
+  <article class="card phone-card">
+    <div class="product-gallery">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85" alt="Samsung Galaxy A26 screen/front view">
+      <img class="camera-view" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85" alt="Samsung Galaxy A26 camera/back view">
+    </div>
+    <div class="icon">📱</div><h3>Samsung Galaxy A26</h3>
+    <p>AMOLED display • multi-camera system • 5G</p><div class="price">KSh 32,990</div>
+    <button class="btn primary" onclick="choosePhone('Samsung Galaxy A26')">Order</button>
+  </article>
+  <article class="card phone-card">
+    <div class="product-gallery">
+      <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=900&q=85" alt="Samsung Galaxy A36 screen/front view">
+      <img class="camera-view" src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=900&q=85" alt="Samsung Galaxy A36 camera/back view">
+    </div>
+    <div class="icon">📱</div><h3>Samsung Galaxy A36</h3>
+    <p>Super AMOLED • 5G • high-resolution camera</p><div class="price">KSh 43,990</div>
+    <button class="btn primary" onclick="choosePhone('Samsung Galaxy A36')">Order</button>
+  </article>
+  <article class="card phone-card">
+    <div class="product-gallery">
+      <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=85" alt="Redmi Note 14 screen/front view">
+      <img class="camera-view" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=85" alt="Redmi Note 14 camera/back view">
+    </div>
+    <div class="icon">📱</div><h3>Redmi Note 14</h3>
+    <p>AMOLED 120Hz • 108MP camera • 5,500mAh battery</p><div class="price">KSh 23,650</div>
+    <button class="btn primary" onclick="choosePhone('Redmi Note 14')">Order</button>
+  </article>
+  <article class="card phone-card">
+    <div class="product-gallery">
+      <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=900&q=85" alt="Redmi 14C screen/front view">
+      <img class="camera-view" src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=900&q=85" alt="Redmi 14C camera/back view">
+    </div>
+    <div class="icon">📱</div><h3>Redmi 14C</h3>
+    <p>Large display • 50MP camera • long battery life</p><div class="price">KSh 13,750</div>
+    <button class="btn primary" onclick="choosePhone('Redmi 14C')">Order</button>
+  </article>
+  <article class="card phone-card">
+    <div class="product-gallery">
+      <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=900&q=85" alt="Infinix HOT 50 screen/front view">
+      <img class="camera-view" src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=900&q=85" alt="Infinix HOT 50 camera/back view">
+    </div>
+    <div class="icon">📱</div><h3>Infinix HOT 50</h3>
+    <p>Large display • performance-focused chipset • 5,000mAh</p><div class="price">KSh 16,499</div>
+    <button class="btn primary" onclick="choosePhone('Infinix HOT 50')">Order</button>
+  </article>
+  <article class="card phone-card">
+    <div class="product-gallery">
+      <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=900&q=85" alt="Tecno Spark 30 screen/front view">
+      <img class="camera-view" src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=900&q=85" alt="Tecno Spark 30 camera/back view">
+    </div>
+    <div class="icon">📱</div><h3>Tecno Spark 30</h3>
+    <p>FHD+ display • 64MP Sony camera • 5,000mAh battery</p><div class="price">KSh 19,799</div>
+    <button class="btn primary" onclick="choosePhone('Tecno Spark 30')">Order</button>
+  </article>
+  <article class="card phone-card"><img class="product-image" src="https://images.unsplash.com/photo-1632661674596-df8be070a5c5?auto=format&fit=crop&w=900&q=85" alt="iPhone 13"><div class="icon">🍎</div><h3>iPhone 13</h3>
+    <p>Super Retina XDR • dual camera system • 5G</p><div class="price">KSh 77,000</div>
+    <button class="btn primary" onclick="choosePhone('iPhone 13')">Order</button>
+  </article>
+  <article class="card phone-card"><img class="product-image" src="https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=900&q=85" alt="iPhone 14"><div class="icon">🍎</div><h3>iPhone 14</h3>
+    <p>Super Retina XDR • advanced dual cameras • 5G</p><div class="price">KSh 84,700</div>
+    <button class="btn primary" onclick="choosePhone('iPhone 14')">Order</button>
+  </article>
+  <article class="card phone-card"><img class="product-image" src="https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&w=900&q=85" alt="iPhone 15"><div class="icon">🍎</div><h3>iPhone 15</h3>
+    <p>Dynamic Island • 48MP main camera • USB-C</p><div class="price">KSh 99,000</div>
+    <button class="btn primary" onclick="choosePhone('iPhone 15')">Order</button>
+  </article>
+  <article class="card phone-card"><img class="product-image" src="https://images.unsplash.com/photo-1727350281062-2f9b8c6a6e6d?auto=format&fit=crop&w=900&q=85" alt="iPhone 16 Pro"><div class="icon">🍎</div><h3>iPhone 16 Pro</h3>
+    <p>A18 Pro • Pro camera system • titanium design</p><div class="price">KSh 143,000</div>
+    <button class="btn primary" onclick="choosePhone('iPhone 16 Pro')">Order</button>
+  </article>
+</div>
+
+
+  </div>
+</section>
+
+
+
+<section id="about">
+  <div class="container">
+    <div class="section-head"><div class="kicker">About</div><h2>Built around useful technology.</h2><p>Vibetech combines retail technology with hands-on digital services, keeping the experience straightforward, professional and customer-focused.</p></div>
+  </div>
+</section>
+
+
+
+<section id="audio">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Audio</div><h2>Audio & accessories</h2><p>Everyday audio gear for music, calls and entertainment.</p></div>
+    <div class="grid">
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85" alt="Wireless Earbuds"><div class="icon">🎧</div><h3>Wireless Earbuds</h3><p>Compact Bluetooth earbuds with charging case.</p><div class="price">From KSh 1,999</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Over-Ear Headphones"><div class="icon">🎧</div><h3>Over-Ear Headphones</h3><p>Comfortable wireless headphones for longer listening.</p><div class="price">From KSh 3,999</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=85" alt="Bluetooth Speakers"><div class="icon">🔊</div><h3>Bluetooth Speakers</h3><p>Portable speakers for home, travel and outdoor listening.</p><div class="price">From KSh 2,499</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=85" alt="Microphones"><div class="icon">🎙️</div><h3>Microphones</h3><p>USB and wireless microphone options for creators and calls.</p><div class="price">From KSh 2,999</div></article>
+    </div>
+  </div>
+</section>
+
+<section id="laptops">
+  <div class="container">
+    <p style="color:var(--muted);font-size:.85rem;margin-bottom:18px">Current market references checked in September 2026. *Laptop prices are examples from current Kenyan listings and vary by exact model, condition and configuration.</p><div class="section-head"><div class="kicker">Computers</div><h2>Laptops & computers</h2><p>Machines for school, work, business, coding and everyday use.</p></div>
+    <div class="grid">
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85" alt="HP Laptops"><div class="icon">💻</div><h3>HP Laptops</h3><p>Student, business and performance models with different RAM and storage options.</p><div class="price">From KSh 34,199 + 10%*</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=900&q=85" alt="Dell Laptops"><div class="icon">💻</div><h3>Dell Laptops</h3><p>Reliable laptops for productivity, school and professional workloads.</p><div class="price">From KSh 23,499 + 10%*</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=85" alt="Lenovo Laptops"><div class="icon">💻</div><h3>Lenovo Laptops</h3><p>Everyday and business laptops with flexible configurations.</p><div class="price">From KSh 29,500 + 10%*</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85" alt="MacBook"><div class="icon">💻</div><h3>MacBook</h3><p>Apple laptops for creative work, development and productivity.</p><div class="price">From KSh 119,999 + 10%*</div></article>
+    </div>
+  </div>
+</section>
+
+<section id="accessories">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Accessories</div><h2>Everything around your device.</h2></div>
+    <div class="grid">
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=85" alt="Chargers & Cables"><div class="icon">🔌</div><h3>Chargers & Cables</h3><p>USB-C, Lightning, fast chargers, adapters and cables.</p><div class="price">From KSh 500</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1609592424524-3d9f9c7b5a6f?auto=format&fit=crop&w=900&q=85" alt="Power Banks"><div class="icon">🔋</div><h3>Power Banks</h3><p>Portable battery packs for phones and other compatible devices.</p><div class="price">From KSh 1,500</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=85" alt="Cases & Screen Protectors"><div class="icon">🛡️</div><h3>Cases & Screen Protectors</h3><p>Protection for popular phone models.</p><div class="price">From KSh 300</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85" alt="Computer Accessories"><div class="icon">⌨️</div><h3>Computer Accessories</h3><p>Keyboards, mice, USB hubs, laptop bags, webcams and more.</p><div class="price">From KSh 1,000</div></article>
+    </div>
+  </div>
+</section>
+
+<section id="gaming">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Gaming</div><h2>Gaming tech</h2></div>
+    <div class="grid">
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?auto=format&fit=crop&w=900&q=85" alt="Controllers"><div class="icon">🎮</div><h3>Controllers</h3><p>Console and PC-compatible controllers.</p><div class="price">From KSh 3,000</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=85" alt="Gaming Monitors"><div class="icon">🖥️</div><h3>Gaming Monitors</h3><p>High-refresh displays for gaming and entertainment.</p><div class="price">From KSh 18,000</div></article>
+      <article class="card"><img class="product-image" src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=85" alt="Gaming Keyboards & Mice"><div class="icon">⌨️</div><h3>Gaming Keyboards & Mice</h3><p>Responsive peripherals for PC gaming.</p><div class="price">From KSh 2,000</div></article>
+    </div>
+  </div>
+</section>
+<section id="order">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Order</div>
+      <h2>Place your order.</h2>
+      <p>Tell us what you need and we'll get back to you with availability and pricing.</p>
+    </div>
+    <div class="contact-card">
+      <form onsubmit="sendOrder(event)">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px">
+          <input id="customerName" required placeholder="Your name" style="padding:14px;border-radius:10px;border:1px solid var(--line);background:#0a101c;color:white">
+          <input id="customerPhone" required placeholder="Phone / WhatsApp number" style="padding:14px;border-radius:10px;border:1px solid var(--line);background:#0a101c;color:white">
+        </div>
+        <input id="product" required placeholder="Product you want (e.g. iPhone, earbuds, charger)" style="width:100%;margin-top:15px;padding:14px;border-radius:10px;border:1px solid var(--line);background:#0a101c;color:white">
+        <input id="quantity" type="number" min="1" value="1" required placeholder="Quantity" style="width:100%;margin-top:15px;padding:14px;border-radius:10px;border:1px solid var(--line);background:#0a101c;color:white">
+        <textarea id="notes" placeholder="Extra details: model, storage, colour, preferred delivery/pickup, etc." style="width:100%;height:120px;margin-top:15px;padding:14px;border-radius:10px;border:1px solid var(--line);background:#0a101c;color:white;resize:vertical"></textarea>
+        <button class="btn primary" type="submit" style="margin-top:15px;cursor:pointer">Send Order on WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+<script>
+function sendOrder(event){
+  event.preventDefault();
+  const name = document.getElementById('customerName').value;
+  const phone = document.getElementById('customerPhone').value;
+  const product = document.getElementById('product').value;
+  const quantity = document.getElementById('quantity').value;
+  const notes = document.getElementById('notes').value;
+  const message = `Hello Vibetech!%0A%0AI'd like to place an order.%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AProduct: ${encodeURIComponent(product)}%0AQuantity: ${encodeURIComponent(quantity)}%0AExtra details: ${encodeURIComponent(notes || 'None')}`;
+  window.open('https://wa.me/254115957219?text=' + message, '_blank');
+}
+</script>
+
+
+<section id="contact">
+  <div class="container contact">
+    <div>
+      <div class="kicker">Contact</div><h2>Let's get your tech sorted.</h2>
+      <p style="color:var(--muted);margin-top:12px">Replace the details below with your real business contacts before publishing.</p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-item">📞 <strong>Phone:</strong> 0115 957219</div>
+      <div class="contact-item">💬 <strong>WhatsApp:</strong> 0115 957219</div>
+            <div class="contact-item">✉️ <strong>Email:</strong> ryanmumo39@gmail.com</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Vibetech. All rights reserved.</div></footer>
+
+<script>
+function choosePhone(phone){
+  const product = document.getElementById('product');
+  if(product){ product.value = phone; }
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
